@@ -1,0 +1,25 @@
+.span-button {
+  display: inline-block;
+  width: 100%;
+}
+
+.generic-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 28px;
+  color: var(--gris-oscuro);
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: rgb(217 218 220);
+  background-color: #fafbfc;
+  cursor: pointer;
+}
+
+.specific-button {
+  padding: 3px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  
+}
