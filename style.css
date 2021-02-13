@@ -1,5 +1,7 @@
 /*reseteo general de las dimensiones y límites de la página*/
 
+@import "buttons.css";
+
 * {
   box-sizing: border-box;
 }
@@ -10,8 +12,6 @@ html body {
   margin: 0;
   padding: 0;
 }
-
-@import "buttons.css";
 
 :root {
   --gris-oscuro: #24292e;
