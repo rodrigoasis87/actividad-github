@@ -1,3 +1,5 @@
+/*reseteo general de las dimensiones y límites de la página*/
+
 * {
   box-sizing: border-box;
 }
@@ -9,13 +11,19 @@ html body {
   padding: 0;
 }
 
+@import "buttons.css";
+
+:root {
+  --gris-oscuro: #24292e;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #24292e;
+  color: var(--gris-oscuro);
 }
 
 header {
-  background-color: #24292e;
+  background-color: var(--gris-oscuro);
   padding: 16px;
 }
 
@@ -93,29 +101,7 @@ h1 {
   margin-right: 16px;
 }
 
-.span-button {
-  display: inline-block;
-  width: 100%;
-}
 
-.generic-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 160px;
-  height: 28px;
-  color: #24292e;
-  border: 1px solid;
-  border-radius: 6px;
-  border-color: rgb(217 218 220);
-  background-color: #fafbfc;
-}
-
-.specific-button {
-  padding: 3px 12px;
-  font-size: 12px;
-  font-weight: 500;
-}
 
 ul {
   padding: 0;
@@ -145,11 +131,11 @@ ul {
   font-size: 13px;
   border: none;
   background-color: #fafbfc;
-  color: #24292e;
+  color: var(--gris-oscuro);
 }
 
 .li-block:hover {
-  color: #24292e;
+  color: var(--gris-oscuro);
   font-weight: 600;
   cursor: pointer;
   border-bottom-color: #f9826c;
@@ -164,16 +150,43 @@ ul {
   border-bottom-width: 1px;
 }
 
+.margin-bot {
+  margin-bottom: 16px;
+}
+
 .specific-button-2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 32px;
   padding: 5px 16px;
   font-size: 12px;
   font-weight: 600;
-  color: #24292e;
+  color: var(--gris-oscuro);
   border: 1px solid;
   border-radius: 6px;
   border-color: rgb(217 218 220);
   background-color: #fafbfc;
+  cursor: pointer;
+}
+
+.box-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-display {
+
+}
+
+.box-style-sup {
+
+}
+
+.box-style-inf {
+
+}
+
+.picture {
+  border-radius: 50%;
 }
